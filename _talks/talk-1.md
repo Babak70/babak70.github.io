@@ -1,7 +1,7 @@
 ---
 title: "Partially-measured physical system characterization with neural networks"
 collection: talks
-type: "Talk"
+type: "Invited Talk"
 permalink: /talks/talk-1
 venue: "Emerging Topics in Artificial Intelligence, SPIE 2021"
 date: 2021-01-08
