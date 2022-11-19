@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Electrical Engineering with a focus on system and communication, University of Tehran, Iran 2014.
+* B.S. in Electrical Engineering with a focus on system and communication, University of Tehran, Iran 2014.1
 * M.S. in Electrical EWngineering with a focus on sub-wavelength optical physics, Sharif University of Technology, Iran, 2016.
 * Ph.D in Electrical Engineering with a focus on data driven system characterization using deep learning and and inverse problems in computational imaging, EPFL, Switzerland, 2022.
 
