@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My full resume could be find [here](../images/files/cv__updated_.pdf)
+My full resume could be find [here](https://babak70.github.io/files/cv__updated_.pdf)
 
 Education
 ======
