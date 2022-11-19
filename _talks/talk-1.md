@@ -2,7 +2,7 @@
 title: "Partially-measured physical system characterization with neural networks"
 collection: talks
 type: "Talk"
-permalink: /talks/2012-03-01-talk-1
+permalink: /talks/talk-1
 venue: "Emerging Topics in Artificial Intelligence, SPIE 2021"
 date: 2021-01-08
 location: "San Diego, California"
