@@ -1,7 +1,7 @@
 ---
 title: "Natural image synthesis for the retina with variational information bottleneck representation"
 collection: talks
-type: "poster presentation"
+type: "Poster presentation"
 permalink: /talks/talk-2
 venue: "NeurIPS 2022"
 date: 2022-11-30
