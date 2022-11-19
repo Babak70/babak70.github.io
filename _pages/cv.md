@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+My full resume could be find [here](images/cv__updated_.pdf)
+
 Education
 ======
 * Ph.D in Electrical Engineering with a focus on data driven system characterization using deep learning and and inverse problems in computational imaging, EPFL, Switzerland, 2022.
@@ -21,7 +23,7 @@ Work experience
   * Duties included: Design of machine learning methods for future cloud storage, system learning and optimization for NP hard problems.
   * Supervisor: Jannes Gladrow, Christos Gkantsidis.
 
-Publications
+Selected Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -33,9 +35,4 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
