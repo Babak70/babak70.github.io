@@ -4,7 +4,7 @@ collection: talks
 type: "Invited Talk"
 permalink: /talks/talk-1
 venue: "Emerging Topics in Artificial Intelligence, SPIE 2021"
-date: 2021-01-08
+date: 2021-08-01
 location: "San Diego, California"
 ---
 [Video](https://youtu.be/yaVTXyZTHdM)
