@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Babak Rahmani"
-  avatar           : "profile.png.png"
+  avatar           : "/images/profile.png.png"
   bio              : "Applied Machine learning researcher"
   location         : "United Kingdom"
   employer         : "Microsoft Research, Cambridge"
