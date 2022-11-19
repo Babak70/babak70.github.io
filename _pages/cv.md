@@ -13,8 +13,8 @@ My full resume could be find [here](https://babak70.github.io/files/cv__updated_
 
 Education
 ======
-* Ph.D in Electrical Engineering with a focus on data driven system characterization using deep learning and and inverse problems in computational imaging, EPFL, Switzerland, 2022.
-* M.S. in Electrical EWngineering with a focus on sub-wavelength optical physics, Sharif University of Technology, Iran, 2016.
+* Ph.D in Electrical Engineering with a focus on data driven system characterization using deep learning and inverse problems in computational imaging, EPFL, Switzerland, 2022.
+* M.S. in Electrical Engineering with a focus on sub-wavelength particle physics, Sharif University of Technology, Iran, 2016.
 * B.S. in Electrical Engineering with a focus on system and communication, University of Tehran, Iran 2014.
 
 Work experience
