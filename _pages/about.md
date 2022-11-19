@@ -8,4 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I got my PhD at the Electrical Engineering department of [EPFL](https://www.epfl.ch/en/) where I was advised by Christophe Moser and Demetri Psaltis working at the intersection of machine learning and sciences for applications such as inverse problems, information retrieval and control systems. My goal was to build robust and reliable machine learning algorithms for controlling real-world complex systems in various disciplines ranging from communication, imaging systems to neuroscience. Currently I am a Postdoctoral researcher at Microsoft Research in Cambridge where I am doing research on the applications of machine learning for the next generation cloud compute including storage and optmization.
+I am Babak Rahmani, a Research Postdoc at Microsoft Research in cambridge working on Machine learning applications in future compute systems.
+
+Before that, I was Ph.D. student at the Electrical Engineering department of [EPFL](https://www.epfl.ch/en/) where I was supervised by  [Christophe Moser](https://people.epfl.ch/christophe.moser?lang=en) and [Demetri Psaltis] (https://scholar.google.com/citations?user=-CVR2h8AAAAJ&hl=en) working at the intersection of machine learning and sciences for applications such as inverse problems, information retrieval and control systems. My goal was to build robust and reliable machine learning algorithms for controlling real-world complex systems in various disciplines ranging from communication, imaging systems to neuroscience. 
+
+Currently I am a Postdoctoral researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) in Cambridge where I am doing research on the applications of machine learning for the next generation cloud compute including storage and optmization.
