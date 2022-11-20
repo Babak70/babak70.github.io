@@ -76,20 +76,22 @@ To demonstrate the efficacy of the IB-GP model in fitting the RGCs’ responses,
 <br/><br/>
 
 <h3>Closed-loop image synthesis</h3>
-<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:600px; height:auto; float:right">
+
 We take advantage of the model developed in the previous sections to devise an algorithm that uses the prior recorded data to optimize the stimulation by iteration in subsequent measurements in a closed loop.
 Specifically, we assume the latent variables of the learned model have captured the principal rules governing the underlying biological system. 
 We intend to find a transformed version of the original input stimuli that yields a set of latent variables that produce the most correlated responses with the original target responses in the subsequent round of measurements. 
 Hence, we define a parametric function $f_\xi: \mathbb{R}^{M \times T}\rightarrow \mathbb{R}^{M \times T} $ that maps the complex original stimuli $\textbf{X}$ onto the transformed stimuli $\textbf{X}^*$. 
 Passing $\textbf{X}^*$ to the forward model, the parameter of the mapping functions, i.e. $\xi$, are optimized so that the forward model's output responses $\textbf{Y}^*$ are the most correlated with the original responses $\textbf{Y}$. 
 Denoting the original stimuli and responses as $\textbf{X}^{orig}:=\textbf{X}$ and $\textbf{Y}^{orig}:=\textbf{Y}$, the objective function reads as:
-
-
-
+<br/>
+<img src="../resources/posts/nips2022/Fig5.png"" style="max-width:300px; height:auto; float:right">
+<br/>
 Therein, $p_\phi$ and $q_\theta$ are the encoder and decoder of the forward model trained on the prior data. $D_1$ is a measure to ensure the closeness of the original target outputs and the responses of the forward model to $\textbf{X}^*$. 
 $D_2$ is a similarity measure between the original and synthesized stimuli $\textbf{X}^{orig}$ and $\textbf{X}^*$ which encourages the image synthesizer to focus on finding the essential features in the stimuli rather than synthesizing entirely new solutions. 
 Finally, $D_3$ is used to constrain the synthesized stimuli $\textbf{X}^*$ to be smooth.
 
+<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:600px; height:auto; float:right">
+                                                                                                
 Figure 4 reports the training results of the closed-loop experiment after the first round of measurements. Therein, the IB-GP is used as the forward model in the training of the image synthesizer. 
 As can be observed, dimensionality reduction of the stimuli without neural information results in synthesized stimuli with excellent smoothness and visible patterns that stimulate neurons maximally.
 We observed various types of optimal stimuli for the Natural dataset, such as Gabor-like filters, on- and off-center Gaussians, or a mixture of both.
