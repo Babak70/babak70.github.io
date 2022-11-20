@@ -30,6 +30,6 @@ __2020__
 
 __2019__
 * __Dec__ <span style="color:#888"><u>Media:</u></span> paper “Multimode optical fiber transmission with a deep learning network” was
-recognized as __one of the top downloaded papers__ in __Nature journal: Light science__.
+recognized as ___one of the top downloaded papers___ in __Nature journal: Light science__.
 
 
