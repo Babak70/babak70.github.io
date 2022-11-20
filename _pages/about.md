@@ -17,7 +17,7 @@ Before that, I was a Ph.D. student at the Electrical Engineering department of [
 __2022__
 
 * __Jul__ <span style="color:#888"><u>Job started:</u></span> Postdoc Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/).
-* __Sep__ <span style="color:#888"><u>Papers:</u></span> __1__ paper _accepted to __NeurIPS__ _2022_.
+* __Sep__ <span style="color:#888"><u>Papers:</u></span> __1__ paper _accepted to __NeurIPS__ 2022_.
 * __March__ <span style="color:#888"><u>Ph.D. completed:</u></span> EDEE, EPFL. Nominated for two awards. TBD!
 
 __2021__
@@ -26,7 +26,7 @@ __2021__
 
 __2020__
 
-* __Jul__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __Nature Machine Intelligence__ _2020_.
+* __Jul__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __Nature Machine Intelligence__ 2020_.
 
 __2019__
 * __Dec__ <span style="color:#888"><u>Media:</u></span> paper “Multimode optical fiber transmission with a deep learning network” was
