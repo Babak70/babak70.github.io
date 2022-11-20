@@ -61,7 +61,7 @@ We test the performane of the IB-GP model on Natural dataset for various latent 
 <br/><br/>
 
 <h3>Analysis of latent space</h3>
-
+<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:600px; height:auto; float:right">
 In Figure 3, we analyze the learned dynamics of the IB-GP and IB-Disjoint trained under the same conditions on the Natural dataset. 
 For β = 0.05 and 15 latents, performances of the IB-GP and IB-Disjoint in prediction of RGCs’ responses are similar (correlation ∼ 0.45 vs. ∼ 0.43, respectively). 
 Nevertheless, the amount of information picked by latents in each model varies significantly. 
@@ -72,10 +72,11 @@ Figure 3(b,d) visualizes the inferred dynamics of the most informative latent in
 As observed in the figure, the dynamics of the most informative latent in the IB-GP have 50 clusters. Strikingly, these 50 clusters correspond to the 50 unique stimuli in the dataset. 
 The test set consists of 5 batches in which each batch has 10 unique im- ages (each jittered 100 times). Each batch is colored differently in the figure. 
 To demonstrate the efficacy of the IB-GP model in fitting the RGCs’ responses, neural activity predictions of both models are shown in Figure 3 (e,f).
-<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:600px; height:auto; float:right">
+
 <br/><br/>
 
 <h3>Closed-loop image synthesis</h3>
+<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:600px; height:auto; float:right">
 We take advantage of the model developed in the previous sections to devise an algorithm that uses the prior recorded data to optimize the stimulation by iteration in subsequent measurements in a closed loop.
 Specifically, we assume the latent variables of the learned model have captured the principal rules governing the underlying biological system. 
 We intend to find a transformed version of the original input stimuli that yields a set of latent variables that produce the most correlated responses with the original target responses in the subsequent round of measurements. 
@@ -93,7 +94,7 @@ Figure 4 reports the training results of the closed-loop experiment after the fi
 As can be observed, dimensionality reduction of the stimuli without neural information results in synthesized stimuli with excellent smoothness and visible patterns that stimulate neurons maximally.
 We observed various types of optimal stimuli for the Natural dataset, such as Gabor-like filters, on- and off-center Gaussians, or a mixture of both.
 
-<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:600px; height:auto; float:right">
+
 <br/><br/>
 
 <h3>Conclusion</h3>
