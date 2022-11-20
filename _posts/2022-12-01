@@ -1,0 +1,37 @@
+---
+layout: post
+title: Variational framework for partially-measured physical system control
+---
+
+<span style="font-size:15px;">
+This is a post for the Neurips 2021 AI4Science workshop paper
+    <a href="https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf">
+            Variational framework for partially-measured physical system control.
+    </a>
+</span>
+
+
+<br/>
+<br/>
+<span style="font-size:15px;">
+From this post, you will learn:
+<ul>
+  <li> Using the variational generative models, we provide a training algorithm for learning the distribution of the system’s inputs that are needed to obtain a desired output of the system.</li>
+  <li> UsingthesamplingfeatureofthelearnedforwardVAEmodel,weillustratehowourtraining algorithm learns to iteratively move towards the correct distribution of the inputs. </li>
+</ul>
+</span>
+
+
+<a class="pull-right" href="https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf" onMouseOver="document.readpaper.src='../resources/posts/buttons/button_read_paper_push-min.png';" onMouseOut="document.readpaper.src='../resources/posts/buttons/button_read_paper-min.png';">
+<img src="../resources/posts/buttons/button_read_paper-min.png" name="readpaper" width=120px class="pull-right"></a>
+<a class="pull-right" href="https://github.com/Babak70/Variational-framework-for-partially-measured-physical-system-control" onMouseOver="document.viewcode.src='../resources/posts/buttons/button_view_code_push-min.png';" onMouseOut="document.viewcode.src='../resources/posts/buttons/button_view_code-min.png';">
+<img src="../resources/posts/buttons/button_view_code-min.png" name="viewcode" width=120px></a>
+<span style="font-size:15px; text-align: right; float: right; color:gray">July 2019</span>
+
+<br/>
+<p></p>
+<hr>
+
+<h2>A bit of a context</h2>
+
+TBD.
