@@ -21,9 +21,9 @@ This is a post for the Neurips 2022 paper
 <span style="font-size:15px;">
 From this post, you will learn:
 <ul>
-  <li>A probabilistic model for joint modeling of stimuli and Retina neural codes based on the <font color="#CA6F1E">I</font>nformation <font color="#CA6F1E">B</font>ottle-neck (<font color="#CA6F1E">IB-GP</font>)
+  <li>A probabilistic model for joint modeling of stimuli and retina neural codes based on the <font color="#CA6F1E">I</font>nformation <font color="#CA6F1E">B</font>ottle-neck (<font color="#CA6F1E">IB-GP</font>)
     <font color="#CA6F1E">G</font>aussian <font color="#CA6F1E">P</font>rocess</li>
-  <li>How latent space of the Retina responses and video stimuli factorizes </li>
+  <li>How latent space of the retina responses and video stimuli factorizes </li>
     <li>How the IB-GP model could be used in closed-loop to synthesize lower complexity stimuli </li>
 </ul>
 </span>
@@ -62,7 +62,7 @@ The IB-GP model minimizes the mutual information of the high-dimensional stimuli
 the latent space and the neural responses. The trade off between these two objectives is controlled by a tuning parameter.
 This way, we ensure the unnecessary information in the stimuli and neural responses is pruned! To show the importance of taking temporal correlation into account when
 learning the joint distribution of the stimuli and neural responses, we compare IB-GP with IB-Disjoint in which the Gaussian process constraint of the latent space is replaced with an isotropic univariate Normal distribution.
-We test the performane of the IB-GP model on Natural dataset for various latent sizes and trade off parameters. Results are shown in Figure 2.
+We test the performane of the IB-GP model on Natural dataset for various latent sizes and trade off parameters. Results are shown in Figure 2. The baseline model is based on [3].
 <img src="../resources/posts/acl19_ctx/ha_general_results-min.png" style="max-width:330px; height:auto; float:right">
 <br/><br/>
 
@@ -87,7 +87,7 @@ Specifically, we assume the latent variables of the learned model have captured 
 We intend to find a transformed version of the original input stimuli that yields a set of latent variables that produce the most correlated responses with the original target responses in the subsequent round of measurements. 
 Hence, we define a parametric function $f_\xi: \mathbb{R}^{M \times T}\rightarrow \mathbb{R}^{M \times T} $ that maps the complex original stimuli $\textbf{X}$ onto the transformed stimuli $\textbf{X}^*$. 
 Passing $\textbf{X}^*$ to the forward model, the parameter of the mapping functions, i.e. $\xi$, are optimized so that the forward model's output responses $\textbf{Y}^*$ are the most correlated with the original responses $\textbf{Y}$. 
-Denoting the original stimuli and responses as $\textbf{X}^{\textnormal{orig}}\coloneqq\textbf{X}$ and $\textbf{Y}^{\textnormal{orig}}\coloneqq\textbf{Y}$, the objective function reads as:
+Denoting the original stimuli and responses as $\textbf{X}^{orig}:=\textbf{X}$ and $\textbf{Y}^{orig}:=\textbf{Y}$, the objective function reads as:
 
 
 
@@ -115,12 +115,20 @@ stimuli and RGCs’ responses were very well represented in the embeddings of th
 The model was then used in a closed-loop experiment to synthesize stimuli that elicit neuronal
 responses as those elicited by the original complex stimuli. Previously published work in the
 literature also looked into closed-loop image synthesis, mainly to find optimal stimuli that maximally
-activate neurons in the retina [?], or more recently in V1 and V4 regions in the mouse [?,?]. The
+activate neurons in the retina [4], or more recently in V1 and V4 regions in the mouse [5, 6]. The
 goal is to obtain spatial features that do not necessarily resemble the original stimuli but still elicit the
 same responses. This allows us to correctly use the resources available, for example, by placing the
 stimulation energy at suitable locations and with the correct spatiotemporal features. We observed
 various types of optimal stimuli for the Natural dataset, such as Gabor-like filters, on- and off-center
 Gaussians, or a mixture of both.
+
+
+[1] A. A. Alemi, I. Fischer, J. V. Dillon, and K. Murphy. Deep vari- ational information bottleneck. arXiv preprint arXiv:1612.00410, 2016.
+[2] F. P. Casale, A. V. Dalca, L. Saglietti, J. Listgarten, and N. Fusi. Gaussian process prior variational autoencoders. arXiv preprint arXiv:1810.11738, 2018.
+[3] L. McIntosh, N. Maheswaranathan, A. Nayebi, S. Ganguli, and S. Baccus. Deep learning models of the retinal response to nat- ural scenes. Advances in neural information processing systems, 29:1369–1377, 2016.
+[4] L. Paninski, J. Pillow, and J. Lewi. Statistical models for neural encoding, decoding, and optimal stimulus design. Progress in brain research, 165:493–507, 2007
+[5] E. Y. Walker, F. H. Sinz, E. Cobos, T. Muhammad, E. Froudarakis, P. G. Fahey, A. S. Ecker, J. Reimer, X. Pitkow, and A. S. Tolias. Inception loops discover what excites neurons most using deep predictive models. Nature neuroscience, 22(12):2060–2065, 2019.
+[6] P. Bashivan, K. Kar, and J. J. DiCarlo. Neural population control via deep image synthesis. Science, 364(6439), 2019
 
 
 <!-- the next two lines are inserted once per page even if there are several shtukovinas,
