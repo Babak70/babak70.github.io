@@ -41,7 +41,7 @@ From this post, you will learn:
 
 <h2>A bit of a context</h2>
 
-<img src="../resources/posts/nips2022/Fig1.png" style="max-width:380px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig1.png" style="max-width:1000px; height:auto; float:right">
 Why do we need to have lower complexity stimuli? <br/> 
 Natural stimuli that impinge on the eye are very high-dimensional both spatially and temporally. It is always useful to know what is primarily eliciting neural responses.
 
@@ -56,7 +56,7 @@ a latent space model that can extract the principal features of the joint stimul
 The schematic of the IB-GP is depicted in Figure 1. The objective of IB is to obtain a reduced representation of the input source that preserves maximum information about the output response. 
 The temporal correlations among data samples is incorporated in the latent spacd via Gaussian process prior.
 <br/><br/>
-<img src="../resources/posts/nips2022/Fig2.png"" style="max-width:330px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig2.png"" style="max-width:1000px; height:auto; float:right">
 
 The IB-GP model minimizes the mutual information of the high-dimensional stimuli and the latent space while at the same maximizing the mutual information of 
 the latent space and the neural responses. The trade off between these two objectives is controlled by a tuning parameter.
@@ -78,7 +78,7 @@ Figure 3(b,d) visualizes the inferred dynamics of the most informative latent in
 As observed in the figure, the dynamics of the most informative latent in the IB-GP have 50 clusters. Strikingly, these 50 clusters correspond to the 50 unique stimuli in the dataset. 
 The test set consists of 5 batches in which each batch has 10 unique im- ages (each jittered 100 times). Each batch is colored differently in the figure. 
 To demonstrate the efficacy of the IB-GP model in fitting the RGCs’ responses, neural activity predictions of both models are shown in Figure 3 (e,f).
-<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:250px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:1000px; height:auto; float:right">
 <br/><br/>
 
 <h3>Closed-loop image synthesis</h3>
@@ -99,7 +99,7 @@ Figure 4 reports the training results of the closed-loop experiment after the fi
 As can be observed, dimensionality reduction of the stimuli without neural information results in synthesized stimuli with excellent smoothness and visible patterns that stimulate neurons maximally.
 We observed various types of optimal stimuli for the Natural dataset, such as Gabor-like filters, on- and off-center Gaussians, or a mixture of both.
 
-<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:250px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:1000px; height:auto; float:right">
 <br/><br/>
 
 <h3>Conclusion</h3>
