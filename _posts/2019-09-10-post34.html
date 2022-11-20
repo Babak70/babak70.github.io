@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Natural image synthesis for the retina with variational
-information bottleneck representation
+title: Natural image synthesis for the retina with variational information bottleneck representation
 ---
 
 
@@ -22,10 +21,10 @@ This is a post for the Neurips 2022 paper
 <span style="font-size:15px;">
 From this post, you will learn:
 <ul>
-  <li>a probabilistic model for joint modeling of stimuli and Retina neural codes based on the <font color="#CA6F1E">I</font>nformation <font color="#CA6F1E">B</font>ottle-neck
+  <li>A probabilistic model for joint modeling of stimuli and Retina neural codes based on the <font color="#CA6F1E">I</font>nformation <font color="#CA6F1E">B</font>ottle-neck
     <font color="#CA6F1E">G</font>aussian <font color="#CA6F1E">P</font>rocess</li>
-  <li>how latent space of the Retina responses and video stimuli factorize </li>
-    <li>how the IB-GP model could be used in closed-loop to synthesize lower complexity stimuli </li>
+  <li>How latent space of the Retina responses and video stimuli factorizes </li>
+    <li>How the IB-GP model could be used in closed-loop to synthesize lower complexity stimuli </li>
 </ul>
 </span>
 
@@ -40,51 +39,78 @@ From this post, you will learn:
 <p></p>
 <hr>
 
-<h2>Human Annotation and Analysis</h2>
+<h2>A bit of a context</h2>
 
 <img src="../resources/posts/acl19_ctx/human_annotation-min.png" style="max-width:380px; height:auto; float:right">
-Why do we need context-aware MT? <br/> To translate a document, one can split it into sentences, translate them independently and
-put the translations together to form a translation of a document. That's right! We would be ok with such
-approach if translations of
-isolated sentences put together formed a meaningful and coherent text. Unfortunately, often this is not the case.
-<br/><br/>
-To find the proportion of translation errors which are only recognized as such in context, and to understand
-which phenomena cause context-agnostic translations not to work together, we conduct a human
-study as schematically shown in the picture. For simplicity, we start with pairs of consecutive sentences.
-We use OpenSubtitles dataset for English-Russian language pair and produce context-agnostic translations
-with the Transformer model trained on this dataset.
+Why do we need to have lower complexity stimuli? <br/> 
+Natural stimuli that impinge on the eye are very high-dimensional both spatially and temporally. It is always useful to know what is primarily eliciting neural responses.
+
+In other words: is it possible to reduce the complexity of the input stimuli and still obtain the same functional behavior? 
+In this work, we focus on the natural vision system and search for answers to these questions. 
+Our system consists of the spatiotemporal stimuli impinging on the photoreceptors in the retina up to the spiking responses emitted by the Retinal Ganglion Cells (RGCs).
+
+<h3>Forward model</h3>
+Then, how could we go about reducing the complexity of the stimuli? First we need a model that is able to prune noise or stochastic responses of neurons to stimuli.
+Inspired by the Deep Variational Information Bottleneck (DVIB) [1, 2], we introduce the Information Bottleneck Gaussian Process (IB-GP), 
+a latent space model that can extract the principal features of the joint stimuli-responses distribution that are sufficient for predicting the retina responses. 
+The schematic of the IB-GP is depicted in Figure 1. The objective of IB is to obtain a reduced representation of the input source that preserves maximum information about the output response. 
+The temporal correlations among data samples is incorporated in the latent spacd via Gaussian process prior.
 <br/><br/>
 <img src="../resources/posts/acl19_ctx/ha_general_results-min.png" style="max-width:330px; height:auto; float:right">
-From the table, we see that our annotators labeled
-82% of sentence pairs as good
-translations. In 11% of cases, at least one translation was considered bad at the sentence level, and in another 7%,
-the sentences were considered individually good, but bad in context of each other. This means that in our setting,
-<u>a substantial proportion of translation errors are only recognized as such in context</u>.
 
+The IB-GP model minimizes the mutual information of the high-dimensional stimuli and the latent space while at the same maximizing the mutual information of 
+the latent space and the neural responses. The trade off between these two objectives is controlled by a tuning parameter.
+This way, we ensure the unnecessary information in the stimuli and neural responses is pruned! To show the importance of taking temporal correlation into account when
+learning the joint distribution of the stimuli and neural responses, we compare IB-GP with IB-Disjoint in which the Gaussian process constraint of the latent space is replaced with an isotropic univariate Normal distribution.
+We test the performane of the IB-GP model on Natural dataset for various latent sizes and trade off parameters. Results are shown in Figure 2.
+<img src="../resources/posts/acl19_ctx/ha_general_results-min.png" style="max-width:330px; height:auto; float:right">
 <br/><br/>
-<h3>Types of Phenomena</h3>
+
+<h3>Analysis of latent space</h3>
+
+In Figure 3, we analyze the learned dynamics of the IB-GP and IB-Disjoint trained under the same conditions on the Natural dataset. 
+For β = 0.05 and 15 latents, performances of the IB-GP and IB-Disjoint in prediction of RGCs’ responses are similar (correlation ∼ 0.45 vs. ∼ 0.43, respectively). 
+Nevertheless, the amount of information picked by latents in each model varies significantly. 
+To show this, we perform a traversal analysis of the latents and report the variability in the output responses for each traversed latent in Figure 3(a,c). 
+The KL divergence for each latent is also plotted. As observed in the figure, IB-GP lumps most of the information required to explain the neural responses in one factor. 
+In comparison, this information is spread over five factors in IB-Disjoint. Analyzing the dynamics of the latents in each model can provide further insight.
+Figure 3(b,d) visualizes the inferred dynamics of the most informative latent in each model after reducing the dimension to 2 with T-SNE. 
+As observed in the figure, the dynamics of the most informative latent in the IB-GP have 50 clusters. Strikingly, these 50 clusters correspond to the 50 unique stimuli in the dataset. 
+The test set consists of 5 batches in which each batch has 10 unique im- ages (each jittered 100 times). Each batch is colored differently in the figure. 
+To demonstrate the efficacy of the IB-GP model in fitting the RGCs’ responses, neural activity predictions of both models are shown in Figure 3 (e,f).
 <img src="../resources/posts/acl19_ctx/types_of_phenomena-min.png" style="max-width:250px; height:auto; float:right">
-From the results of the human annotation, we take all instances of consecutive sentences with good
-translations which become incorrect when placed in the context of each other. For each, we identify the
-language phenomenon which caused a discrepancy. The results are provided in the table.
 <br/><br/>
-Below we discuss these types of phenomena and problems in translation they cause in more detail.
-We concentrate only on the three most frequent phenomena.
 
-<br/><br/>
-<h4>Deixis</h4>
+<h3>Closed-loop image synthesis</h3>
+We take advantage of the model developed in the previous sections to devise an algorithm that uses the prior recorded data to optimize the stimulation by iteration in subsequent measurements in a closed loop.
+Specifically, we assume the latent variables of the learned model have captured the principal rules governing the underlying biological system. 
+We intend to find a transformed version of the original input stimuli that yields a set of latent variables that produce the most correlated responses with the original target responses in the subsequent round of measurements. 
+Hence, we define a parametric function $f_\xi: \mathbb{R}^{M \times T}\rightarrow \mathbb{R}^{M \times T} $ that maps the complex original stimuli $\textbf{X}$ onto the transformed stimuli $\textbf{X}^*$. 
+Passing $\textbf{X}^*$ to the forward model, the parameter of the mapping functions, i.e. $\xi$, are optimized so that the forward model's output responses $\textbf{Y}^*$ are the most correlated with the original responses $\textbf{Y}$. 
+Denoting the original stimuli and responses as $\textbf{X}^{\textnormal{orig}}\coloneqq\textbf{X}$ and $\textbf{Y}^{\textnormal{orig}}\coloneqq\textbf{Y}$, the objective function reads as:
 
+\begin{equation}
+\label{eq:e7a}
+\begin{split}  &\min_{\mathbf{\xi}}\ D_1(\textbf{Y}^{\textnormal{orig}},\textbf{Y}^*) + \alpha\bigr[ D_2(\textbf{X}^{\textnormal{orig}},\textbf{X}^*) + D_3(\textbf{X}^*)\bigr]\\
+\end{split}
+\end{equation}
+where:
+\begin{equation}
+\label{eq:e7}
+\begin{split}  
+\textbf{X}^*= f_\xi(\textbf{X}^{\textnormal{orig}}), \ 
+\textbf{Z}^* \sim p_{\phi}(.|\textbf{X}^*),\
+ \textbf{Y}^* \sim q_{\theta}(.|\textbf{Z}^*).
+\end{split}
+\end{equation}
+
+Therein, $p_\phi$ and $q_\theta$ are the encoder and decoder of the forward model trained on the prior data. $D_1$ is a measure to ensure the closeness of the original target outputs and the responses of the forward model to $\textbf{X}^*$. $D_2$ is a similarity measure between the original and synthesized stimuli $\textbf{X}^{\textnormal{orig}}$ and $\textbf{X}^*$ which encourages the image synthesizer to focus on finding the essential features in the stimuli rather than synthesizing entirely new solutions. Finally, $D_3$ is used to constrain the synthesized stimuli $\textbf{X}^*$ to be smooth.
 <!-- the next two lines are inserted once per page even if there are several shtukovinas,
-     the rest is one-per-shtukovina; read more: https://flickity.metafizzy.co/options.html -->
+     the rest is one-per-shtukovina; 
+read more: https://flickity.metafizzy.co/options.html -->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-Deictic words or phrases are referential expressions
-whose denotation depends on context. For example, if you hear
-<font color="#689F38">"I'm here telling you this"</font>, you most probably won't understand who is
-<font color="#689F38">"I"</font>, where is <font color="#689F38">"here"</font>,
-who is <font color="#689F38">"you"</font> and what is <font color="#689F38">"this"</font> unless you are a
-part of the situation.
 
 <br/><br/>
 
