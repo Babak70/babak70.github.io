@@ -20,7 +20,7 @@ __2022__
 * __Sep__ <span style="color:#888"><u>Papers:</u></span> __1__ paper _accepted to __NeurIPS__ _2022_.
 * __March__ <span style="color:#888"><u>Ph.D. completed:</u></span> EDEE, EPFL. Nominated for two awards. TBD!
 
-__2021___
+__2021__
 
 * __Oct__ <span style="color:#888"><u>Papers:</u></span> __1__ paper _accepted to __NeurIPS AI4Science workshop__ 2021_.
 
