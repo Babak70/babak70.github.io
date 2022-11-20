@@ -3,11 +3,6 @@ layout: post
 title: Natural image synthesis for the retina with variational information bottleneck representation
 ---
 
-
-<video width="380" height="auto" style="float: right" loop autoplay muted>
-  <source src="../resources/posts/acl19_ctx/cadec_post_crop.mp4" type="video/mp4">
-</video>
-
 <span style="font-size:15px;">
 This is a post for the Neurips 2022 paper
     <a href="https://openreview.net/forum?id=FkPZGtTxXx6">
@@ -29,9 +24,9 @@ From this post, you will learn:
 </span>
 
 
-<a class="pull-right" href="https://www.aclweb.org/anthology/P19-1116" onMouseOver="document.readpaper.src='../resources/posts/buttons/button_read_paper_push-min.png';" onMouseOut="document.readpaper.src='../resources/posts/buttons/button_read_paper-min.png';">
+<a class="pull-right" href="https://openreview.net/forum?id=FkPZGtTxXx6" onMouseOver="document.readpaper.src='../resources/posts/buttons/button_read_paper_push-min.png';" onMouseOut="document.readpaper.src='../resources/posts/buttons/button_read_paper-min.png';">
 <img src="../resources/posts/buttons/button_read_paper-min.png" name="readpaper" width=120px class="pull-right"></a>
-<a class="pull-right" href="https://github.com/lena-voita/good-translation-wrong-in-context" onMouseOver="document.viewcode.src='../resources/posts/buttons/button_view_code_push-min.png';" onMouseOut="document.viewcode.src='../resources/posts/buttons/button_view_code-min.png';">
+<a class="pull-right" href="https://github.com/Babak70/Natural_image_synthesis" onMouseOver="document.viewcode.src='../resources/posts/buttons/button_view_code_push-min.png';" onMouseOut="document.viewcode.src='../resources/posts/buttons/button_view_code-min.png';">
 <img src="../resources/posts/buttons/button_view_code-min.png" name="viewcode" width=120px></a>
 <span style="font-size:15px; text-align: right; float: right; color:gray">July 2019</span>
 
@@ -41,7 +36,7 @@ From this post, you will learn:
 
 <h2>A bit of a context</h2>
 
-<img src="../resources/posts/nips2022/Fig1.png" style="max-width:1000px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig1.png" style="max-width:600px; height:auto; float:right">
 Why do we need to have lower complexity stimuli? <br/> 
 Natural stimuli that impinge on the eye are very high-dimensional both spatially and temporally. It is always useful to know what is primarily eliciting neural responses.
 
@@ -55,15 +50,14 @@ Inspired by the Deep Variational Information Bottleneck (DVIB) [1, 2], we introd
 a latent space model that can extract the principal features of the joint stimuli-responses distribution that are sufficient for predicting the retina responses. 
 The schematic of the IB-GP is depicted in Figure 1. The objective of IB is to obtain a reduced representation of the input source that preserves maximum information about the output response. 
 The temporal correlations among data samples is incorporated in the latent spacd via Gaussian process prior.
+<img src="../resources/posts/nips2022/Fig2.png"" style="max-width:600px; height:auto; float:right">
 <br/><br/>
-<img src="../resources/posts/nips2022/Fig2.png"" style="max-width:1000px; height:auto; float:right">
-
+                                                                                                  
 The IB-GP model minimizes the mutual information of the high-dimensional stimuli and the latent space while at the same maximizing the mutual information of 
 the latent space and the neural responses. The trade off between these two objectives is controlled by a tuning parameter.
 This way, we ensure the unnecessary information in the stimuli and neural responses is pruned! To show the importance of taking temporal correlation into account when
 learning the joint distribution of the stimuli and neural responses, we compare IB-GP with IB-Disjoint in which the Gaussian process constraint of the latent space is replaced with an isotropic univariate Normal distribution.
 We test the performane of the IB-GP model on Natural dataset for various latent sizes and trade off parameters. Results are shown in Figure 2. The baseline model is based on [3].
-<img src="../resources/posts/acl19_ctx/ha_general_results-min.png" style="max-width:330px; height:auto; float:right">
 <br/><br/>
 
 <h3>Analysis of latent space</h3>
@@ -78,7 +72,7 @@ Figure 3(b,d) visualizes the inferred dynamics of the most informative latent in
 As observed in the figure, the dynamics of the most informative latent in the IB-GP have 50 clusters. Strikingly, these 50 clusters correspond to the 50 unique stimuli in the dataset. 
 The test set consists of 5 batches in which each batch has 10 unique im- ages (each jittered 100 times). Each batch is colored differently in the figure. 
 To demonstrate the efficacy of the IB-GP model in fitting the RGCs’ responses, neural activity predictions of both models are shown in Figure 3 (e,f).
-<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:1000px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig3.png"" style="max-width:600px; height:auto; float:right">
 <br/><br/>
 
 <h3>Closed-loop image synthesis</h3>
@@ -99,7 +93,7 @@ Figure 4 reports the training results of the closed-loop experiment after the fi
 As can be observed, dimensionality reduction of the stimuli without neural information results in synthesized stimuli with excellent smoothness and visible patterns that stimulate neurons maximally.
 We observed various types of optimal stimuli for the Natural dataset, such as Gabor-like filters, on- and off-center Gaussians, or a mixture of both.
 
-<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:1000px; height:auto; float:right">
+<img src="../resources/posts/nips2022/Fig4.png"" style="max-width:600px; height:auto; float:right">
 <br/><br/>
 
 <h3>Conclusion</h3>
