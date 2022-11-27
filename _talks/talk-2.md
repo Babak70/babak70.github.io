@@ -4,7 +4,7 @@ collection: talks
 type: "Poster presentation"
 permalink: /talks/talk-2
 venue: "NeurIPS 2022"
-date: 2022-11-30
+date: 2022-11-19
 location: "New Orleans, USA"
 ---
 
