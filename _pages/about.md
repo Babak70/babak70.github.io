@@ -22,7 +22,7 @@ __2022__
 
 __2021__
 
-* __Oct__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS ML4PhysicalScience workshop__ 2021_.
+* __Oct__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS ML4PhysicalSciences workshop__ 2021_.
 
 __2020__
 
