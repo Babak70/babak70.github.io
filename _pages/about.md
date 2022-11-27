@@ -16,13 +16,13 @@ Before that, I was a Ph.D. student at the Electrical Engineering department of [
 
 __2022__
 
-* __Jul__ <span style="color:#888"><u>Job started:</u></span> Postdoc Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) Cambridge, UK.
 * __Sep__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS__ 2022_.
+* __Jul__ <span style="color:#888"><u>Job started:</u></span> Postdoc Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) Cambridge, UK.
 * __Mar__ <span style="color:#888"><u>Ph.D. completed:</u></span> EDEE, EPFL. Nominated for two awards. TBD!
 
 __2021__
 
-* __Oct__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS AI4Science workshop__ 2021_.
+* __Oct__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS ML4PhysicalScience workshop__ 2021_.
 
 __2020__
 
