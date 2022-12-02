@@ -1,13 +1,12 @@
 ---
-title: "Natural image synthesis for the retina with variational information bottleneck representation"
+title: "Variational framework for partially-measured physical system control"
 collection: talks
 type: "Poster presentation"
-permalink: /talks/talk-2
-venue: "NeurIPS 2022"
-date: 2022-11-19
-location: "New Orleans, USA"
+permalink: /talks/talk-3
+venue: "NeurIPS 2021, ML4PhysicalSciences"
+date: 2021-12-06
+location: "Virtual"
 ---
 
-[Video](https://youtu.be/g6egMsPIgwg)
-
-In the early visual system, high dimensional natural stimuli are encoded into the trains of neuronal spikes that transmit the information to the brain to produce perception. However, is all the visual scene information required to explain the neuronal responses? In this work, we search for answers to this question by developing a joint model of the natural visual input and neuronal responses using the Information Bottleneck (IB) framework that can represent features of the input data into a few latent variables that play a role in the prediction of the outputs. The correlations between data samples acquired from published experiments on ex-vivo retinas are accounted for in the model by a Gaussian Process (GP) prior. The proposed IB-GP model performs competitively to the state-of-the-art feedforward convolutional networks in predicting spike responses to natural stimuli. Finally, the IB-GP model is used in a closed-loop iterative process to obtain reduced-complexity inputs that elicit responses as elicited by the original stimuli. We found three properties of the retina's IB-GP model. First, the reconstructed stimuli from the latent variables show robustness in spike prediction across models. Second, surprisingly the dynamics of the high-dimensional stimuli and RGCs' responses are very well represented in the embeddings of the IB-GP model. Third, the minimum stimuli consist of different patterns: Gabor-type locally high-frequency filters, on- and off-center Gaussians, or a mixture of both. Overall, this work demonstrates that the IB-GP model provides a principled approach for joint learning of the stimuli and retina codes, capturing dynamics of the stimuli-RGCs in the latent space which could help better understand the computation of the early visual system.
+[Video](https://slideslive.com/38971762/variational-framework-for-partiallymeasured-physical-system-control?ref=search-presentations-Variational+framework+for+partially-measured+physical+system+control)
+To characterize a physical system to behave as desired, either its underlying governing rules must be known a priori or the system itself be accurately measured. The complexity of full measurements of the system scales with its size. When exposed to real-world conditions, such as perturbations or time-varying settings, the system calibrated for a fixed working condition might require non-trivial re-calibration, a process that could be prohibitively expensive, inefficient and impractical for real-world use cases. In this work, we propose a learning procedure to obtain a desired target output from a physical system. We use Variational Auto-Encoders (VAE) to provide a generative model of the system function and use this model to obtain the required input of the system that produces the target output. We showcase the applicability of our method for two datasets in optical physics and neuroscience.
