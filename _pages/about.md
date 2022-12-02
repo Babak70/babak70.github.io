@@ -26,7 +26,7 @@ __2021__
 
 __2020__
 
-* __Jul__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __Nature Machine Intelligence__ 2020_.
+* __Jul__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __Nature Machine Intelligence__ 2020_. [News coverage](https://actu.epfl.ch/news/using-artificial-intelligence-to-enhance-complex-s/) and [interview](https://youtu.be/Ep_HFdZISII).
 
 __2019__
 * __Dec__ <span style="color:#888"><u>Media:</u></span> paper “Multimode optical fiber transmission with a deep learning network” was
