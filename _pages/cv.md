@@ -20,8 +20,7 @@ Education
 Work experience
 ======
 * Postdoc Researcher: Microsoft Research, Cambridge.
-  * Duties included: Design of machine learning methods for future cloud storage, system learning and optimization for NP hard problems.
-  * Supervisor: Jannes Gladrow, Christos Gkantsidis.
+  * Duties included: Design of machine learning methods for learning and optimization for NP hard problems.
 
 Selected Publications
 ======
