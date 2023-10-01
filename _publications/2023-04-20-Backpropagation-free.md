@@ -7,5 +7,3 @@ venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2304.11042'
 
 ---
-
-[Download paper here](https://arxiv.org/pdf/2304.11042.pdf)

@@ -7,5 +7,3 @@ venue: 'Fourth Workshop on Machine Learning and the Physical Sciences, NeurIPS21
 paperurl: 'https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf'
 
 ---
-
-[Download paper here](https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf)

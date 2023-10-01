@@ -7,5 +7,3 @@ venue: 'Nature Machine Intelligence'
 paperurl: 'https://www.nature.com/articles/s41377-018-0074-1'
 
 ---
-
-[Download paper here](https://www.nature.com/articles/s41377-018-0074-1.pdf)

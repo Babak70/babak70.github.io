@@ -7,5 +7,3 @@ venue: 'Bio-arxiv'
 paperurl: 'An actor-model framework for visual sensory encoding'
 
 ---
-
-[Download paper here](https://www.biorxiv.org/content/biorxiv/early/2023/08/15/2023.08.14.553166.full.pdf)
