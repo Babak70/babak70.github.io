@@ -1,10 +1,9 @@
 ---
 title: "Backpropagation-free Training of Deep Physical Neural Networks"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 20223-04-20
-venue: 'Arxive'
+permalink: /publication/2023-04-20-Backpropagation-free
+date: 2023-04-20
+venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2304.11042'
 
 ---
