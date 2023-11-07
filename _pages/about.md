@@ -14,6 +14,9 @@ Before that, I was a Ph.D. student at the Electrical Engineering department of [
 
 ## <span style="color:darkblue">News </span>
 
+__2023__
+
+* __Nov__ <span style="color:#888"><u>Papers:</u></span> paper "Backpropagation-free Training of Deep Physical Neural Networks" _accepted to Science!.
 __2022__
 
 * __Sep__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS__ 2022_.
