@@ -16,8 +16,9 @@ Before that, I was a Ph.D. student at the Electrical Engineering department of [
 
 __2023__
 
-* __Nov__ <span style="color:#888"><u>Papers:</u></span> "Backpropagation-free Training of Deep Physical Neural Networks" accepted to Science!.
+* __Nov__ <span style="color:#888"><u>Papers:</u></span> "Backpropagation-free Training of Deep Physical Neural Networks" accepted to Science!
 
+__2022__
 * __Sep__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS__ 2022_.
 * __Jul__ <span style="color:#888"><u>Job started:</u></span> Postdoc Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) Cambridge, UK.
 * __Mar__ <span style="color:#888"><u>Ph.D. completed:</u></span> EDEE, EPFL. [Thesis](https://infoscience.epfl.ch/record/293091/files/EPFL_TH9406.pdf) nominated for two awards. TBD!
