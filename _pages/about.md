@@ -17,6 +17,7 @@ Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.e
 ## News
 
 * **Feb 2026**: Blog post: [Debugging CWMs: Where Traces Help (and Why They Fail)](https://babak70.github.io/code-world-models-blog/posts/state-tracking-code-world-models.html)
+* **Apr 2025**: ASAP Seminar talk: “Implicit Language Models are RNNs” — [video](https://www.youtube.com/watch?v=F4HojFVEyd4), [paper](https://arxiv.org/abs/2502.07827), [slides](https://asap-seminar.github.io/assets/slides/asap_implicit_rnn.pdf)
 * **Sep 2025**: Joined **BethgeLab** (Tübingen ELLIS & AI Center) as a Visiting Researcher (sabbatical).
 * **Sep 2025**: Two Nature papers (“AOC” and “Training Deep Physical Neural Networks”) published on the same day.
 * **2025**: **ICML Spotlight**: “Implicit Language Models are RNNs: Balancing Parallelization and Expressivity”.
