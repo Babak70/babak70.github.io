@@ -6,7 +6,7 @@ date: 2023-04-20
 venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2304.11042'
 header:
-  teaser: publications/2023-04-20-Backpropagation-free.png
+  teaser: publications/placeholder.png
 
 ---
 
