@@ -31,14 +31,6 @@ I hold a PhD in Electrical Engineering with a multidisciplinary background spann
 * **Visiting Researcher (Sabbatical)**, BethgeLab (Tübingen ELLIS & AI Center), **2025–now**
   * Agentic systems, world models, and open-ended reasoning
 
-## Publications
-
-See [/publications/](/publications/).
-
-## Talks
-
-See [/talks/](/talks/).
-
 
 ## Selected talks
 
