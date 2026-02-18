@@ -30,8 +30,8 @@ Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.e
 
 ## Selected publications
 {% assign pubs = site.publications | sort: "date" | reverse %}
-{% for post in pubs limit: 6 %}
-  {% include archive-single.html type="list" %}
+{% for post in pubs limit: 3 %}
+  {% include archive-single.html type="list" show_read_more=false %}
 {% endfor %}
 
 [See all publications](/publications/)

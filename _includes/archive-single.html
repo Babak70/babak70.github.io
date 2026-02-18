@@ -60,10 +60,26 @@
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
       {% endif %}
 
-      {% if post.excerpt and site.read_more != 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-      {% elsif post.excerpt and site.read_more == 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      {% assign show_excerpt = include.show_excerpt %}
+      {% if show_excerpt == nil %}
+        {% assign show_excerpt = true %}
+      {% endif %}
+
+      {% assign show_read_more = include.show_read_more %}
+      {% if show_read_more == nil %}
+        {% if site.read_more == 'enabled' %}
+          {% assign show_read_more = true %}
+        {% else %}
+          {% assign show_read_more = false %}
+        {% endif %}
+      {% endif %}
+
+      {% if post.excerpt and show_excerpt %}
+        {% if show_read_more %}
+          <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+        {% else %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+        {% endif %}
       {% endif %}
 
       {% unless post.collection == 'publications' %}
