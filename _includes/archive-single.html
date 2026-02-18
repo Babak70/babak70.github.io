@@ -74,6 +74,11 @@
         {% endif %}
       {% endif %}
 
+      {% if post.collection == 'posts' %}
+        {% assign show_excerpt = false %}
+        {% assign show_read_more = false %}
+      {% endif %}
+
       {% if post.excerpt and show_excerpt %}
         {% if show_read_more %}
           <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
