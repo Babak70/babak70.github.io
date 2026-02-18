@@ -10,10 +10,7 @@ author_profile: true
 
 
 {% include base_path %}
-
-<div class="grid__wrapper">
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% for post in pubs %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html type="list" %}
 {% endfor %}
-</div>

@@ -15,13 +15,10 @@ My research focuses on **efficient and agentic AI**, particularly **reasoning**,
 Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.epfl.ch/en/) (Lausanne, Switzerland), supervised by [Christophe Moser](https://people.epfl.ch/christophe.moser?lang=en) and [Demetri Psaltis](https://scholar.google.com/citations?user=-CVR2h8AAAAJ&hl=en).
 
 ## Selected publications
-
-<div class="grid__wrapper">
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% for post in pubs limit: 6 %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html type="list" %}
 {% endfor %}
-</div>
 
 [See all publications](/publications/)
 

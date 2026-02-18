@@ -107,6 +107,71 @@
   }
 }
 
+/*
+   Publications (list view)
+   ========================================================================== */
+
+.archive__item--pub {
+  padding: 1em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .archive__item-permalink {
+    opacity: 0.5;
+    margin-left: 0.35em;
+    text-decoration: none;
+  }
+
+  .archive__item-authors,
+  .archive__item-venue {
+    margin: 0 0 0.35em;
+    font-size: $type-size-6;
+  }
+}
+
+/* Mobile-first: stack teaser above content */
+.archive__item--pub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+
+  .archive__item-teaser {
+    width: 100%;
+    max-height: 220px;
+  }
+
+  .archive__item-teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Desktop/tablet: teaser left, content right, equal heights */
+@include breakpoint($medium) {
+  .archive__item--pub {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .archive__item--pub .archive__item-teaser {
+    flex: 0 0 200px;
+    max-height: none;
+    align-self: stretch;
+  }
+
+  .archive__item--pub .archive__item-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
 
 /*
    Grid view
