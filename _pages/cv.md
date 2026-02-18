@@ -28,25 +28,17 @@ I hold a PhD in Electrical Engineering with a multidisciplinary background spann
 * **Researcher**, Microsoft Research (Cambridge, UK), **2022–now**
   * Efficient AI for improved LLM reasoning and recall
   * Post-training and alignment, including reinforcement learning
-* **Visiting Researcher (Sabbatical)**, Tübingen ELLIS & AI Center (Tübingen, Germany), **2025–now**
+* **Visiting Researcher (Sabbatical)**, BethgeLab (Tübingen ELLIS & AI Center), **2025–now**
   * Agentic systems, world models, and open-ended reasoning
 
-## Selected publications
+## Publications
 
-<ul>
-{% assign pubs = site.publications | sort: "date" | reverse %}
-{% for post in pubs limit: 10 %}
-  {% include archive-single-cv.html %}
-{% endfor %}
-</ul>
+See [/publications/](/publications/).
+
+## Talks
+
+See [/talks/](/talks/).
+
 
 ## Selected talks
 
-<ul>
-{% assign talks = site.talks | sort: "date" | reverse %}
-{% for post in talks limit: 10 %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}
-</ul>
-  
-  
