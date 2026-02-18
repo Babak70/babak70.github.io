@@ -8,11 +8,25 @@ redirect_from:
   - /about.html
 ---
 
-I’m Babak Rahmani. I’m a Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) (Cambridge, UK) and a Visiting Researcher (sabbatical) at the Tübingen ELLIS & AI Center.
+I’m Babak Rahmani. I’m a Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) (Cambridge, UK) and a Visiting Researcher (sabbatical) at **BethgeLab** (Tübingen ELLIS & AI Center).
 
 My research focuses on **efficient and agentic AI**, particularly **reasoning**, **memory**, and **compositional generalization** in large language models. I have experience with large-scale training (up to 7B parameters), post-training, alignment, and reinforcement learning.
 
 Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.epfl.ch/en/) (Lausanne, Switzerland), supervised by [Christophe Moser](https://people.epfl.ch/christophe.moser?lang=en) and [Demetri Psaltis](https://scholar.google.com/citations?user=-CVR2h8AAAAJ&hl=en).
+
+## News
+
+* **Sep 2025**: Joined **BethgeLab** (Tübingen ELLIS & AI Center) as a Visiting Researcher (sabbatical).
+* **Sep 2025**: Two Nature papers (“AOC” and “Training Deep Physical Neural Networks”) published on the same day.
+* **2025**: **ICML Spotlight**: “Implicit Language Models are RNNs: Balancing Parallelization and Expressivity”.
+* **2023**: Marie Skłodowska-Curie Fellowship (BiTFormer) — score **100/100** (≈ **9%** success rate).
+* **Nov 2023**: “Backpropagation-free Training of Deep Physical Neural Networks” accepted to **Science**.
+* **Sep 2022**: Paper accepted to **NeurIPS 2022**.
+* **Jul 2022**: Started at Microsoft Research (Cambridge, UK).
+* **Mar 2022**: PhD completed at EPFL.
+* **Oct 2021**: Paper accepted to NeurIPS **ML4PhysicalSciences** workshop.
+* **Jul 2020**: Paper accepted to **Nature Machine Intelligence**.
+* **Dec 2019**: “Multimode optical fiber transmission with a deep learning network” recognized as a top-downloaded paper in **Nature Light: Science & Applications**.
 
 ## Selected publications
 {% assign pubs = site.publications | sort: "date" | reverse %}
@@ -22,10 +36,5 @@ Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.e
 
 [See all publications](/publications/)
 
-## News
-
-* **2025–now**: Visiting Researcher (Sabbatical), Tübingen ELLIS & AI Center; Marie Skłodowska-Curie Fellow (BiTFormer)
-* **2022–now**: Researcher, Microsoft Research (Cambridge, UK)
-* **2022**: PhD completed, EPFL
 
 
