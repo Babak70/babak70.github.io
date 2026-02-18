@@ -1,0 +1,38 @@
+about:
+  summary: >-
+    I hold a PhD in Electrical Engineering with a multidisciplinary background spanning
+    machine learning, physics, and biological systems. My research focuses on efficient
+    and agentic AI, particularly reasoning, memory, and compositional generalization in
+    large language models. I have experience with large-scale training (up to 7B
+    parameters), post-training, alignment, and reinforcement learning.
+
+positions:
+  - title: Researcher
+    org: Microsoft Research
+    location: Cambridge, UK
+    start: 2022
+  - title: Visiting Researcher (Sabbatical)
+    org: Tübingen ELLIS & AI Center
+    location: Tübingen, Germany
+    start: 2025
+    note: Marie Skłodowska-Curie Fellow (BiTFormer)
+
+education:
+  - degree: PhD, Electrical Engineering
+    org: EPFL
+    location: Lausanne, Switzerland
+    years: "2018–2022"
+    thesis: "Learning of physical systems: from inference to control"
+    supervisors: "Christophe Moser & Demetri Psaltis"
+  - degree: MSc, Electrical Engineering
+    org: Sharif University of Technology
+    location: Tehran, Iran
+    years: "2014–2016"
+  - degree: BSc, Electrical Engineering
+    org: University of Tehran
+    location: Tehran, Iran
+    years: "2010–2014"
+
+awards:
+  - "EPFL eSeed (2020)"
+  - "Marie Curie Fellowship (2023), BiTFormer"

@@ -115,6 +115,14 @@
 .grid__item {
   margin-bottom: 2em;
 
+  .archive__item {
+    height: 100%;
+    padding: 1em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: $background-color;
+  }
+
   .page__meta {
     margin: 0 0 4px;
   }
@@ -122,6 +130,7 @@
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
+    line-height: 1.2;
   }
 
   .archive__item-excerpt {

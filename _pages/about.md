@@ -1,38 +1,34 @@
 ---
 permalink: /
-title: "Hi,"
-excerpt: "About me"
+title: "Babak Rahmani"
+excerpt: "Efficient and agentic AI (reasoning, memory, compositional generalization)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am Babak Rahmani, a Research Postdoc at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) in Cambridge UK, where I am doing research on the applications of machine learning for optmization techniques.
+I’m Babak Rahmani. I’m a Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) (Cambridge, UK) and a Visiting Researcher (sabbatical) at the Tübingen ELLIS & AI Center.
 
-Before that, I was a Ph.D. student at the Electrical Engineering department of [EPFL](https://www.epfl.ch/en/) where I was supervised by [Christophe Moser](https://people.epfl.ch/christophe.moser?lang=en) and [Demetri Psaltis](https://scholar.google.com/citations?user=-CVR2h8AAAAJ&hl=en) working at the intersection of machine learning and sciences for applications such as inverse problems, information retrieval and control systems. My goal was to build robust and reliable machine learning algorithms for controlling real-world complex systems in various disciplines ranging from communication, imaging systems to neuroscience. 
+My research focuses on **efficient and agentic AI**, particularly **reasoning**, **memory**, and **compositional generalization** in large language models. I have experience with large-scale training (up to 7B parameters), post-training, alignment, and reinforcement learning.
 
-## <span style="color:darkblue">News </span>
+Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.epfl.ch/en/) (Lausanne, Switzerland), supervised by [Christophe Moser](https://people.epfl.ch/christophe.moser?lang=en) and [Demetri Psaltis](https://scholar.google.com/citations?user=-CVR2h8AAAAJ&hl=en).
 
-__2023__
+## Selected publications
 
-* __Nov__ <span style="color:#888"><u>Papers:</u></span> "Backpropagation-free Training of Deep Physical Neural Networks" accepted to Science!
+<div class="grid__wrapper">
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% for post in pubs limit: 6 %}
+  {% include archive-single.html type="grid" %}
+{% endfor %}
+</div>
 
-__2022__
-* __Sep__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS__ 2022_.
-* __Jul__ <span style="color:#888"><u>Job started:</u></span> Postdoc Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) Cambridge, UK.
-* __Mar__ <span style="color:#888"><u>Ph.D. completed:</u></span> EDEE, EPFL. [Thesis](https://infoscience.epfl.ch/record/293091/files/EPFL_TH9406.pdf) nominated for two awards. TBD!
+[See all publications](/publications/)
 
-__2021__
+## News
 
-* __Oct__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __NeurIPS ML4PhysicalSciences workshop__ 2021_.
-
-__2020__
-
-* __Jul__ <span style="color:#888"><u>Papers:</u></span> paper _accepted to __Nature Machine Intelligence__ 2020_. [News coverage](https://actu.epfl.ch/news/using-artificial-intelligence-to-enhance-complex-s/) and [interview](https://youtu.be/Ep_HFdZISII).
-
-__2019__
-* __Dec__ <span style="color:#888"><u>Media:</u></span> paper “Multimode optical fiber transmission with a deep learning network” was
-recognized as __one of the top downloaded papers__ in ___Nature journal: Light science___.
+* **2025–now**: Visiting Researcher (Sabbatical), Tübingen ELLIS & AI Center; Marie Skłodowska-Curie Fellow (BiTFormer)
+* **2022–now**: Researcher, Microsoft Research (Cambridge, UK)
+* **2022**: PhD completed, EPFL
 
 

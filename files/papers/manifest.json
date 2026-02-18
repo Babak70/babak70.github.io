@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-02-18T22:28:39.403076+00:00",
+  "output_dir": "files/papers",
+  "results": [
+    {
+      "publication_file": "_publications/2018-10-03-multimode.md",
+      "paperurl": "https://www.nature.com/articles/s41377-018-0074-1",
+      "download_url": null,
+      "output_path": null,
+      "status": "skipped",
+      "detail": "No supported download URL (not arXiv/bioRxiv/direct PDF)"
+    },
+    {
+      "publication_file": "_publications/2020-07-01-actor.md",
+      "paperurl": "https://www.nature.com/articles/s42256-020-0199-9",
+      "download_url": null,
+      "output_path": null,
+      "status": "skipped",
+      "detail": "No supported download URL (not arXiv/bioRxiv/direct PDF)"
+    },
+    {
+      "publication_file": "_publications/2021-12-06-variational.md",
+      "paperurl": "https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf",
+      "download_url": "https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_108.pdf",
+      "output_path": "files/papers/2021-12-06-variational.pdf",
+      "status": "downloaded",
+      "detail": null
+    },
+    {
+      "publication_file": "_publications/2022-12-06-Natural.md",
+      "paperurl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/283f1354f1de1c53a14afe0a6740e889-Abstract-Conference.html",
+      "download_url": null,
+      "output_path": null,
+      "status": "skipped",
+      "detail": "No supported download URL (not arXiv/bioRxiv/direct PDF)"
+    },
+    {
+      "publication_file": "_publications/2023-04-20-Backpropagation-free.md",
+      "paperurl": "https://arxiv.org/abs/2304.11042",
+      "download_url": "https://arxiv.org/pdf/2304.11042.pdf",
+      "output_path": "files/papers/2023-04-20-Backpropagation-free.pdf",
+      "status": "downloaded",
+      "detail": null
+    },
+    {
+      "publication_file": "_publications/2023-08-14-An-actor-model.md",
+      "paperurl": "https://www.biorxiv.org/content/10.1101/2023.08.14.553166v1.abstract",
+      "download_url": "https://www.biorxiv.org/content/10.1101/2023.08.14.553166v1.full.pdf",
+      "output_path": "files/papers/2023-08-14-An-actor-model.pdf",
+      "status": "downloaded",
+      "detail": null
+    }
+  ]
+}

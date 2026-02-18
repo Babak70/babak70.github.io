@@ -11,6 +11,9 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+<div class="grid__wrapper">
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% for post in pubs %}
+  {% include archive-single.html type="grid" %}
 {% endfor %}
+</div>

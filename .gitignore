@@ -1,2 +1,9 @@
 _site/
 
+# Bundler / Ruby build artifacts
+.bundle/
+vendor/
+
+# OS/editor
+.DS_Store
+
