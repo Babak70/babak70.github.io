@@ -35,7 +35,7 @@ Previously, I completed my PhD in Electrical Engineering at [EPFL](https://www.e
 ## Selected publications
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-{% assign pub_order = "/publication/2025-09-01-training-deep-physical-neural-networks|/publication/2025-09-01-aoc|/publication/2025-02-01-implicit-language-models-rnns|/publication/2023-04-20-Backpropagation-free|/publication/2024-11-09-regularizing-the-infinite|/publication/2023-08-14-An-actor-model" | split: "|" %}
+{% assign pub_order = "/publication/2026-02-16-learning-state-tracking-from-code-using-linear-rnns|/publication/2026-02-14-debugging-code-world-models|/publication/2025-09-01-training-deep-physical-neural-networks|/publication/2025-09-01-aoc|/publication/2025-02-01-implicit-language-models-rnns|/publication/2023-04-20-Backpropagation-free|/publication/2024-11-09-regularizing-the-infinite|/publication/2023-08-14-An-actor-model" | split: "|" %}
 
 {% for permalink in pub_order %}
   {% assign post = site.publications | where: "permalink", permalink | first %}
