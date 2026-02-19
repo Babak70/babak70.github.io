@@ -16,6 +16,7 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
+    position: relative;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -28,6 +29,20 @@
     a {
       text-decoration: none;
     }
+  }
+}
+
+.masthead__updated {
+  display: none;
+  position: absolute;
+  top: 1em;
+  right: 3.25em;
+  font-size: $type-size-6;
+  color: $gray;
+  white-space: nowrap;
+
+  @include breakpoint($medium) {
+    display: block;
   }
 }
 
