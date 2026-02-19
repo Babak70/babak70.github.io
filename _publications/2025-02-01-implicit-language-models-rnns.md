@@ -1,5 +1,6 @@
 ---
 title: "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity"
+authors: "Babak Rahmani (co-first author) et al."
 collection: publications
 permalink: /publication/2025-02-01-implicit-language-models-rnns
 date: 2025-02-01

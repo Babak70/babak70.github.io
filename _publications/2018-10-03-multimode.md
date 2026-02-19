@@ -1,5 +1,6 @@
 ---
 title: "Multimode optical fiber transmission with a deep learning network"
+authors: "Babak Rahmani et al."
 collection: publications
 permalink: /publication/2018-10-03-multimode
 date: 2018-10-03

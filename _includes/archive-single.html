@@ -53,7 +53,8 @@
         <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% elsif post.collection == 'publications' %}
         {% if post.authors %}
-          <p class="archive__item-authors">{{ post.authors }}</p>
+          {% assign authors = post.authors | replace: "Babak Rahmani", "<strong>Babak Rahmani</strong>" %}
+          <p class="archive__item-authors">{{ authors }}</p>
         {% endif %}
         <p class="archive__item-venue">{{ post.venue }}{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}</p>
       {% elsif post.date %}
@@ -75,6 +76,11 @@
       {% endif %}
 
       {% if post.collection == 'posts' %}
+        {% assign show_excerpt = false %}
+        {% assign show_read_more = false %}
+      {% endif %}
+
+      {% if post.collection == 'publications' %}
         {% assign show_excerpt = false %}
         {% assign show_read_more = false %}
       {% endif %}

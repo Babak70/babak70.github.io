@@ -1,5 +1,6 @@
 ---
 title: "Backpropagation-free Training of Deep Physical Neural Networks"
+authors: "Babak Rahmani et al."
 collection: publications
 permalink: /publication/2023-04-20-Backpropagation-free
 date: 2023-04-20

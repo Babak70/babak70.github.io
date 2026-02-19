@@ -1,5 +1,6 @@
 ---
 title: "Variational framework for partially-measured physical system control"
+authors: "Babak Rahmani et al."
 collection: publications
 permalink: /publication/2023-12-06-variational
 date: 2021-12-06

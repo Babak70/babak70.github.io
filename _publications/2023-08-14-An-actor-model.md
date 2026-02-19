@@ -1,5 +1,6 @@
 ---
 title: "An actor-model framework for visual sensory encoding"
+authors: "Babak Rahmani et al."
 collection: publications
 permalink: /publication/2023-08-14-An-actor-model
 date: 2023-08-14
