@@ -1,6 +1,6 @@
 ---
 title: "Backpropagation-free Training of Deep Physical Neural Networks"
-authors: "Ali Momeni, Babak Rahmani, et al."
+authors: "Ali Momeni, Babak Rahmani, Matthieu Malléjac, Philipp del Hougne, Romain Fleury"
 collection: publications
 permalink: /publication/2023-04-20-Backpropagation-free
 date: 2023-04-20

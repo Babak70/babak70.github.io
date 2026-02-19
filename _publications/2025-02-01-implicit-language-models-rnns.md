@@ -1,6 +1,6 @@
 ---
 title: "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity"
-authors: "Mark Schöne, Babak Rahmani (co-first author), et al."
+authors: "Mark Schöne, Babak Rahmani (co-first author), Heiner Kremer, Fabian Falck, Hitesh Ballani, Jannes Gladrow"
 collection: publications
 permalink: /publication/2025-02-01-implicit-language-models-rnns
 date: 2025-02-01

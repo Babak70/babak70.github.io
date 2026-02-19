@@ -1,6 +1,6 @@
 ---
 title: "An actor-model framework for visual sensory encoding"
-authors: "Franklin Leong, Babak Rahmani, et al."
+authors: "Franklin Leong, Babak Rahmani, Demetri Psaltis, Christophe Moser, Diego Ghezzi"
 collection: publications
 permalink: /publication/2023-08-14-An-actor-model
 date: 2023-08-14
