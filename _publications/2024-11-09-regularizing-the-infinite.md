@@ -1,6 +1,6 @@
 ---
 title: "Regularizing the Infinite: Improved Generalization Performance with Deep Equilibrium Models"
-authors: "Babak Rahmani, Jannes Gladrow, Kirill Kalinin, Heiner Kremer, Christos Gkantsidis, Hitesh Ballani"
+authors: "Babak Rahmani, et al."
 collection: publications
 permalink: /publication/2024-11-09-regularizing-the-infinite
 date: 2024-11-09

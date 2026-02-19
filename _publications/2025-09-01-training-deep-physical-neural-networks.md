@@ -1,6 +1,6 @@
 ---
 title: "Training Deep Physical Neural Networks"
-authors: "Babak Rahmani (second author) et al."
+authors: "Ali Momeni, Babak Rahmani (second author), et al."
 collection: publications
 permalink: /publication/2025-09-01-training-deep-physical-neural-networks
 date: 2025-09-01
