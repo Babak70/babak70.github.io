@@ -1,4 +1,18 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+	(function () {
+		document.addEventListener('click', function (e) {
+			var link = e.target.closest && e.target.closest('a.js-obfuscated-email');
+			if (!link) return;
+			e.preventDefault();
+			var user = link.getAttribute('data-user');
+			var domain = link.getAttribute('data-domain');
+			if (!user || !domain) return;
+			window.location.href = 'mailto:' + user + '@' + domain;
+		});
+	})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

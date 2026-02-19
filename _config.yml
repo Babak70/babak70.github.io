@@ -87,7 +87,8 @@ author:
   employer         : "Microsoft Research"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Q3DLZlEAAAAJ&hl=en"
-  email            : "rahmani.b91[at]gmail.com"
+  email_user       : "rahmani.b91"
+  email_domain     : "gmail.com"
   researchgate     :  
   uri              :
   bitbucket        :

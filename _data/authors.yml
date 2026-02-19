@@ -2,7 +2,8 @@
 
 Name Name:
   name        : "Babak Rahmani"
-  email       : "rahmani.b91@gmail.com"
+  email_user  : "rahmani.b91"
+  email_domain: "gmail.com"
   bio         : "ML researcher"
   avatar      : "images/profile.png"
   twitter     : "BabakRmni"

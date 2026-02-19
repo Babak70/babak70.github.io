@@ -31,8 +31,25 @@
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      {% if author.email_user and author.email_domain %}
+        <li>
+          <a class="js-obfuscated-email" href="#" data-user="{{ author.email_user }}" data-domain="{{ author.email_domain }}">
+            <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+            {{ author.email_user }} [at] {{ author.email_domain }}
+          </a>
+        </li>
+      {% elsif author.email %}
+        {% assign _email_parts = author.email | split: "@" %}
+        {% if _email_parts.size == 2 %}
+          <li>
+            <a class="js-obfuscated-email" href="#" data-user="{{ _email_parts[0] }}" data-domain="{{ _email_parts[1] }}">
+              <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              {{ _email_parts[0] }} [at] {{ _email_parts[1] }}
+            </a>
+          </li>
+        {% else %}
+          <li><span><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span></li>
+        {% endif %}
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
