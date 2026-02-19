@@ -1,6 +1,6 @@
 ---
 title: "Multimode optical fiber transmission with a deep learning network"
-authors: "Babak Rahmani (first author), Damien Loterie, Georgia Konstantinou, Demetri Psaltis, Christophe Moser"
+authors: "Babak Rahmani, Damien Loterie, Georgia Konstantinou, Demetri Psaltis, Christophe Moser"
 collection: publications
 permalink: /publication/2018-10-03-multimode
 date: 2018-10-03
