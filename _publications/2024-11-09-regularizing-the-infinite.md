@@ -5,9 +5,9 @@ collection: publications
 permalink: /publication/2024-11-09-regularizing-the-infinite
 date: 2024-11-09
 venue: 'NeurIPS 2024 Workshop: Machine Learning with New Compute Paradigms (MLNCP)'
-paperurl: 'https://openreview.net/pdf?id=UZ0bDnnJ1E'
+paperurl: 'https://neurips.cc/virtual/2024/101267'
 header:
-  teaser: publications/neurips.png
+  teaser: publications/regularizing-the-infinite.png
 
 ---
 

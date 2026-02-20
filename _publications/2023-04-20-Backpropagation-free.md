@@ -5,7 +5,7 @@ collection: publications
 permalink: /publication/2023-04-20-Backpropagation-free
 date: 2023-04-20
 venue: 'Science'
-paperurl: 'https://arxiv.org/abs/2304.11042'
+paperurl: 'https://www.science.org/doi/10.1126/science.adi8474'
 header:
   teaser: publications/science_paper.png
 
