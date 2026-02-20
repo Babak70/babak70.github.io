@@ -7,7 +7,7 @@ date: 2025-09-01
 venue: 'Nature'
 paperurl: 'https://www.nature.com/articles/s41586-025-09384-2'
 header:
-  teaser: publications/placeholder.png
+  teaser: publications/training-of-pnns.png
 
 ---
 
