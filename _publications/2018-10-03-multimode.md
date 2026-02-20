@@ -7,7 +7,7 @@ date: 2018-10-03
 venue: 'Nature Light Science and Application'
 paperurl: 'https://www.nature.com/articles/s41377-018-0074-1'
 header:
-  teaser: publications/placeholder.png
+  teaser: publications/light-science-application.png
 
 ---
 

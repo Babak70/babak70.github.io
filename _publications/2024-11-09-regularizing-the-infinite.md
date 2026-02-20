@@ -7,7 +7,7 @@ date: 2024-11-09
 venue: 'NeurIPS 2024 Workshop: Machine Learning with New Compute Paradigms (MLNCP)'
 paperurl: 'https://openreview.net/pdf?id=UZ0bDnnJ1E'
 header:
-  teaser: publications/placeholder.png
+  teaser: publications/neurips.png
 
 ---
 

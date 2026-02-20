@@ -7,7 +7,7 @@ date: 2023-04-20
 venue: 'Science'
 paperurl: 'https://arxiv.org/abs/2304.11042'
 header:
-  teaser: publications/placeholder.png
+  teaser: publications/science_paper.png
 
 ---
 

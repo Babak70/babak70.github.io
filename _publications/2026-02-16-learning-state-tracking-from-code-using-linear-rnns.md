@@ -7,7 +7,7 @@ date: 2026-02-16
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2602.14814'
 header:
-  teaser: publications/placeholder.png
+  teaser: publications/repl-state-tracking.png
 
 ---
 
