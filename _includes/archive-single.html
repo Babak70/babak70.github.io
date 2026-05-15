@@ -57,6 +57,15 @@
           <p class="archive__item-authors">{{ authors }}</p>
         {% endif %}
         <p class="archive__item-venue">{{ post.venue }}{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}</p>
+        {% if post.venue2 or post.paperurl2 %}
+          <p class="archive__item-venue">
+            {% if post.paperurl2 %}
+              <a href="{{ post.paperurl2 }}">{{ post.venue2 | default: post.paperurl2 }}</a>{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}
+            {% else %}
+              {{ post.venue2 }}{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}
+            {% endif %}
+          </p>
+        {% endif %}
       {% elsif post.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
       {% endif %}
