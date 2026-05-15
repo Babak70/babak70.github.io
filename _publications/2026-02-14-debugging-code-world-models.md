@@ -12,3 +12,5 @@ header:
 ---
 
 Code World Models (CWMs) are language models trained to simulate program execution.
+
+Also accepted to **Workshop on Latent & Implicit Thinking – Going Beyond CoT Reasoning** (OpenReview: https://openreview.net/forum?id=rUtMh5j8rx).
